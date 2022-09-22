@@ -1,0 +1,25 @@
+.success {
+  background-image: url(../img/content/success.png);
+  background-repeat: no-repeat;
+  background-size: 100%;
+  background-position: center bottom;
+  position: fixed;
+  display: none;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: white;
+  padding-top: 110px;
+  z-index: 100;
+
+  .content {
+    padding: 0 20px;
+    text-align: center;
+  }
+
+  .note {
+    color: #474747;
+    margin: $padding_base 0;
+  }
+}

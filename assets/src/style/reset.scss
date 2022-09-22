@@ -1,0 +1,25 @@
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+  border: 0;
+  margin: 0;
+  padding: 0;
+  font-family: $font_family_text;
+  font-size: $font_size_base;
+  font-weight: $font_weight_base;
+  line-height: $line_height_base;
+}
+
+article, footer, header, nav, section {
+  display: block;
+}
+
+body {
+  background: $gray;
+  min-width: $screen_xs;
+}
+
+strong {
+  font-weight: 600;
+}

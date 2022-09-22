@@ -1,0 +1,237 @@
+// typography
+h1 {
+  font-family: $font_family_heading;
+  font-size: $font_size_h1;
+  font-weight: $font_weight_heading;
+
+  @include screen-lg() {
+    font-size: $font_size_h2;
+  }
+
+  @include screen-sm() {
+    font-size: $font_size_h3;
+  }
+}
+
+h2 {
+  font-family: $font_family_heading;
+  font-size: $font_size_h2;
+  font-weight: $font_weight_heading;
+  margin-bottom: 48px;
+
+  @include screen-md() {
+    font-size: $font_size_h3;
+  }
+
+  @include screen-sm() {
+    font-size: $font_size_h4;
+  }
+}
+
+h3 {
+  font-size: $font_size_h3;
+  font-weight: $font_weight_heading;
+}
+
+h4 {
+  font-size: $font_size_h4;
+  font-weight: $font_weight_heading;
+}
+
+
+p {
+  font-size: $font_size_base;
+  line-height: $line_height_base;
+
+  @include screen-sm() {
+    font-size: $font_size_sm;
+  }
+}
+
+.highlight {
+  color: $primary;
+  font-size: inherit;
+  font-family: inherit;
+}
+
+.container {
+  margin: 0 auto;
+  max-width: $page_width;
+  width: 100%;
+}
+
+.box {
+  background-color: $white;
+  border-radius: $border_radius_lg;
+  padding: 55px;
+  position: relative;
+
+  @include screen-sm() {
+    h2 {
+      text-align: center;
+      max-width: 80%;
+      margin: 0 auto;
+    }
+    padding: 44px 20px;
+  }
+}
+
+// labels
+.label {
+  border-radius: $border_radius_md;
+  color: $white;
+  font-size: $font_size_sm;
+  display: inline-block;
+  padding: 10px;
+
+  &.popular {
+    background-color: $primary;
+  }
+
+  &.profitable {
+    background-color: $black;
+  }
+}
+
+
+// cols
+.columns {
+  display: flex;
+  justify-content: space-between;
+
+  &.columns2 {
+    .column {
+      width: 50%;
+    }
+
+    @include screen-md {
+      display: block;
+      .column {
+        width: 100%;
+        & + .column {
+          margin: 12px 0;
+        }
+      }
+    }
+
+    @include screen-sm {
+      display: block;
+      .column {
+        width: 100%;
+        & + .column {
+          margin: 12px 0;
+        }
+      }
+    }
+  }
+
+  &.columns3 {
+    .column {
+      width: 32%;
+    }
+
+    @include screen-md {
+      display: block;
+      .column {
+        display: flex;
+        align-items: center;
+        width: 100%;
+        & + .column {
+          margin: 8px 0;
+        }
+      }
+    }
+
+    @include screen-sm {
+      display: block;
+      .column {
+        width: 100%;
+        & + .column {
+          margin: 8px 0;
+        }
+      }
+    }
+  }
+
+  &.columns4 {
+    .column {
+      width: 24%;
+    }
+
+    @include screen-lg {
+      flex-wrap: wrap;
+      .column {
+        width: 50%;
+      }
+    }
+
+    @include screen-md {
+      display: block;
+      .column {
+        width: 100% !important;
+        & + .column {
+          margin: 8px 0;
+        }
+      }
+    }
+
+    @include screen-sm {
+      display: block;
+      .column {
+        width: 100% !important;
+        & + .column {
+          margin: 8px 0;
+        }
+      }
+    }
+  }
+}
+
+// icons
+
+.icon {
+  background-repeat: no-repeat;
+  background-position: center;
+  display: inline-block;
+
+  &.icon-compress {
+    background-image: url(../img/icons/compress.svg);
+    height: 35px;
+    width: 35px;
+  }
+  &.icon-scooter {
+    background-image: url(../img/icons/electric_scooter.svg);
+    height: 35px;
+    width: 35px;
+  }
+  &.icon-clock {
+    background-image: url(../img/icons/nest_clock_farsight_analog.svg);
+    height: 31px;
+    width: 31px;
+  }
+  &.icon-speed {
+    background-image: url(../img/icons/speed.svg);
+    height: 35px;
+    width: 35px;
+  }
+  &.icon-repair {
+    background-image: url(../img/icons/repair.svg);
+    height: 123px;
+    width: 123px;
+  }
+  &.icon-wallet {
+    background-image: url(../img/icons/wallet.svg);
+    height: 123px;
+    width: 123px;
+  }
+  &.icon-samokat {
+    background-image: url(../img/icons/samokat.svg);
+    height: 123px;
+    width: 123px;
+  }
+  &.icon-menu {
+    background-image: url(../img/icons/menu.svg);
+    height: 24px;
+    width: 24px;
+  }
+}
